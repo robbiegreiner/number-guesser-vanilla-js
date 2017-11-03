@@ -3,15 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Number Guesser</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
   </head>
   <body>
+    <header>
+      <h1>Number Guesser</h1>
+    </header>
+    <input class="num-input" id="num-input"type="text" placeholder="Enter your guess!">
+    <div class="btn-container">
+      <button class="guess-btn" id="guess-btn">Guess</button>
+      <button class="clear-btn" id="clear-btn">Clear</button>
+    </div>
+
+    <h2>Your last guess was</h2>
+    <div class="guess-area">
+      <span id='guess'>--</span>
+    </div>
+    <h1><span id='highlowok'></span></h1>
+    <button id='reset-btn' class='reset-btn'>Reset</button>
 
 
-
-
-  <script charset="utf-8" src="myscripts.js">
+  <script charset="utf-8" src="script.js">
 	</script>
   </body>
 </html>
