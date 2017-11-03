@@ -4,14 +4,14 @@ const guessSpan = document.getElementById('guess');
 const highlowok = document.getElementById('highlowok');
 const resetBtn = document.getElementById('reset-btn');
 
-let min = 0;
-let max = 100;
-let randomNum = generateRandom();
-console.log(randomNum);
-
-function generateRandom(){
+const generateRandom = () => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
+
+var min = 0;
+var max = 100;
+var randomNum = generateRandom();
+console.log(randomNum);
 
 const reset = () => {
   guessSpan.innerHTML = '--';
